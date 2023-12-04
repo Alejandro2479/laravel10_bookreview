@@ -51,7 +51,7 @@
             <li class="mb-4">
                 <div class="empty-book-item">
                     <p class="empty-text">No books found</p>
-                    <a href="{{ route('books.create') }}" class="reset-link">Reset criteria</a>
+                    {{-- <a href="{{ route('books.create') }}" class="reset-link">Reset criteria</a> --}}
                 </div>
             </li>
         @endforelse

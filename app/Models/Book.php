@@ -48,7 +48,7 @@ class Book extends Model
 
     public function scopeHighestRated(Builder $query, $from = null, $to = null): Builder
     {
-        return $query->withWithAvgRating()->orderBy('reviews_avg_rating', 'desc');
+        return $query->withAvgRating()->orderBy('reviews_avg_rating', 'desc');
     }
 
     public function scopeMinReviews(Builder $query, int $minReviews): Builder
